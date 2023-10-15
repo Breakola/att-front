@@ -1,0 +1,25 @@
+<h1> Interpolação </h1>
+
+<article>
+    <p>{{frase}}</p>
+</article>
+
+<article>
+    <p>Para acessar o ChatGPT: <a href="{{opa}}" target="_blank" > clique aqui... </a> </p>
+</article>
+
+<h1> Event binding </h1>
+
+<article>
+    <p [style.color] = "cor" [style.background-color] = "back" (click) = "mudaCor()" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga doloribus minus earum enim velit quae quod assumenda non consequuntur nihil corporis laboriosam omnis accusamus itaque neque, quaerat optio nemo quam?</p>
+</article>
+
+<article>
+    <select #val (change)="getChange(val.value)">
+        <option value = "Marlon melhor professor">Texto1</option>
+        <option value = "Nós te amamos Marlon">Texto2</option>
+        <option value = "Marlon sou teu fã">Texto3</option>
+        <option value = "Angular é bom demais">Texto4</option>
+    </select>
+    <p>{{ texto }}</p>
+</article>
